@@ -1,0 +1,23 @@
+.myMusicContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+ }
+
+ @media (max-width : 450px) {
+    .myMusicContainer{
+      width: 100%;
+       padding-left: 2rem;
+       padding-right: 2rem;
+    }
+ }
+
+ .myMusicContainer div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+
+ .myMusicContainer div > *{
+   display: flex;
+ }

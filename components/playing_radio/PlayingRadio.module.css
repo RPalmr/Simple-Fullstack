@@ -1,0 +1,45 @@
+.radioCover {
+    width: 100%;
+    position: relative;
+}
+
+.radioCover img,
+.radioCoverInfo{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.radioCover img{
+    display: flex;
+    object-fit: cover;
+    object-position: bottom;
+    animation: nudge 5s linear infinite alternate;
+}
+
+.radioCoverInfo{
+    z-index: 1;
+    background-color: rgba(24,24,24,0.50);
+}
+
+@keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(0, 5px);
+    }
+
+  }
+
+.radioCoverInfo div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}

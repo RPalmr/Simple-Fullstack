@@ -1,0 +1,8 @@
+.currentSongInfo{
+    margin-top: 400px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }

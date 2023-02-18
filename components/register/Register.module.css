@@ -1,0 +1,21 @@
+.registerFormContainer{
+   display: flex;
+   margin-top: 10rem;
+   flex-direction: column;
+   width: 100%;
+   max-width: 450px;
+}
+
+.registerFormContainer p{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@media (max-width : 450px) {
+   .registerFormContainer{
+      margin-top: 4rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+}

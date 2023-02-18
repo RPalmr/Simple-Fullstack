@@ -1,0 +1,108 @@
+:root {
+    --black-color: #0f0b08;
+    --white-color: #ffffff;
+    --offwhite-color: #ebe0d4;
+    --errors-color: #bb0000;
+    --primary-dark-color: #f2a93b;
+    --primary-light-color: #f0ddb8; 
+    --primary-color: #f8c540;  
+    --onPrimary-color: #0f0b08; 
+    --accent-color : #f27d3c; 
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --bg-alt-color: #202020;
+    --bg-color: #181818;
+    --bg-alt-secondary-color : #313131;
+    --secondary-color: #4b8aa2;
+  }
+
+ 
+.bgBlack{
+  background-color: var(--bg-color);
+}
+
+.bgAlt{
+  background-color: var(--bg-alt-color);
+}
+
+.bgAlt2{
+  background-color: var(--bg-alt-secondary-color);
+}
+
+.white{
+  color: var(--white-color);
+}
+
+.bgOffWhite{
+  background-color: var(--offwhite-color);
+}
+
+.offWhite{
+  color: var(--offwhite-color);
+}
+
+.bgAltBorder{
+  border-color: var(--bg-alt-color);
+}
+
+.primary{
+  color: var(--primary-color);
+}
+
+.primaryDark{
+  color: var(--primary-dark-color);
+}
+
+.primaryLight{
+  color: var(--primary-light-color);
+}
+
+.accent{
+  color: var(--accent-color);
+}
+
+.black{
+  color: var(--black-color);
+}
+
+.error{
+  color: var(--errors-color);
+}
+
+
+/*** ANIMATIONS **/
+.whiteGlow {
+  color: var(--white-color);
+}
+
+.whiteGlow{
+  background: linear-gradient(to right, var(--primary-color) 0, var(--primary-light-color) 10%, var(--white-color) 20%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2.5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+.pulsateDarkBg{
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+0%, 100% {
+  background-color: rgba(24,24,24,0.50);
+}
+50% {
+  background-color: rgba(24,24,24,0.30);
+}
+}

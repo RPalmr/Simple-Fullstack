@@ -1,0 +1,108 @@
+input:focus,
+button:focus,
+textarea:focus,
+select:focus,
+input:active,
+button:active,
+textarea:active,
+select:active {
+  outline: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input:focus,
+input:active {
+  background-color: transparent;
+  background: transparent;
+}
+
+.primaryInputs {
+  caret-color: var(--white-color);
+  background: transparent !important;
+  background-color: transparent !important;
+  padding: 0.8rem 2rem;
+  border: 1px solid;
+  border-image-slice: 1;
+  transition: transform 250ms ease-in-out;
+  border-image-source: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--primary-dark-color)
+  );
+  color: var(--primary-light-color);
+}
+
+/* remove browser autofill styles **/
+.primaryInputs:autofill,
+.primaryInputs:-webkit-autofill,
+.primaryInputs:-internal-autofill-selected {
+  color: var(--primary-light-color) !important;
+  -webkit-text-fill-color: var(--primary-light-color) !important;
+  background-color: transparent !important;
+  box-shadow: 0 0 0 50px var(--bg-alt-color) inset;
+  -webkit-box-shadow: 0 0 0 50px var(--bg-alt-color) inset;
+}
+
+/****** buttons ***/
+.primaryGradientFilledBtn,
+.primaryGradientBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+
+.primaryGradientFilledBtn:hover,
+.primaryGradientFilledBtn:focus,
+.primaryGradientBtn:hover,
+.primaryGradientBtn:focus {
+  cursor: hand;
+  cursor: pointer;
+}
+
+.primaryGradientBtn {
+  color: var(--white-color);
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--primary-dark-color)
+  );
+  transition: transform 250ms ease-in-out;
+}
+
+.primaryGradientBtn:hover,
+.primaryGradientBtn:focus {
+    transform: scale(0.98);
+    color: var(--primary-light-color);
+    border-image-source: linear-gradient(
+        to left,
+        var(--primary-dark-color),
+        var(--primary-color)
+    );
+}
+
+
+.primaryGradientFilledBtn {
+  color: var(--bg-alt-color);
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 12px;
+  border:  none !important;
+  background-image: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 51%, var(--primary-dark-color) 100%);
+}
+
+.primaryGradientFilledBtn:hover,
+.primaryGradientFilledBtn:focus{
+  background-position: right center; /* change the direction of the change here */
+}
+
+
+

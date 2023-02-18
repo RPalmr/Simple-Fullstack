@@ -1,0 +1,33 @@
+.profileFormContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+ }
+
+ .profileHeadContainer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   height: max-content;
+ }
+ 
+
+ @media (max-width : 450px) {
+    .profileFormContainer{
+       padding-left: 2rem;
+       padding-right: 2rem;
+    }
+ }
+
+ .profileForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+
+ .profileForm > *{
+   display: flex;
+ }
+

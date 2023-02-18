@@ -1,0 +1,77 @@
+/*** small **/
+.ml-sm{
+  margin-left: .5rem;
+}
+
+.mr-sm{
+  margin-right: .5rem;
+}
+
+.mb-sm{
+  margin-bottom: .5rem;
+}
+
+.mt-sm{
+  margin-top: .5rem;
+}
+
+.pr-sm{
+  padding-right: .5rem;
+} 
+
+.pl-sm{
+  padding-left: .5rem;
+}
+
+
+/*** standard **/
+.flexSpacerStd{
+  display: flexbox;
+  width: 1rem;
+  height: 1rem;
+}
+
+.mb-std{
+   margin-bottom: 1rem;
+}
+
+.mt-std{
+    margin-top: 1rem;
+ }
+
+ 
+
+ .pb-std{
+   padding-bottom: 1rem;
+}
+
+.pt-std{
+    padding-top: 1rem;
+ }
+
+ .p-std{
+   padding: 1rem;
+ }
+
+ .px-std{
+   padding-left: 1rem;
+   padding-right: 1rem;
+ }
+
+ /*** medium **/
+
+ .flexSpacerMd{
+  display: flexbox;
+  width: 2rem;
+  height: 2rem;
+}
+
+ .my-md{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ }
+
+.py-md{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

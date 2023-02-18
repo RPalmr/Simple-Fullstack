@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "HeadFont";
+  src: url("/assets/fonts/OTRtype-Regular.woff2") format("woff2"),
+    url("/assets/fonts/OTRtype-Regular.woff") format("woff"),
+    url("/assets/fonts/OTRtypeGX.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BodyFont";
+  src: url("/assets/fonts/LibreFranklin-Regular.ttf");
+}
+
+@font-face {
+  font-family: "BodyFontLight";
+  src: url("/assets/fonts/LibreFranklin-Light.ttf");
+}
+
+@font-face {
+  font-family: "BodyFontMedium";
+  src: url("/assets/fonts/LibreFranklin-Medium.ttf");
+}
+
+.headline1 {
+  font-family: "HeadFont";
+  font-size: 97px;
+}
+.headline2 {
+  font-family: "HeadFont";
+  font-size: 61px;
+}
+.headline3 {
+  font-family: "HeadFont";
+  font-size: 48px;
+}
+.headline4 {
+  font-family: "HeadFont";
+  font-size: 34px;
+}
+.headline5 {
+  font-family: "HeadFont";
+  font-size: 24px;
+}
+.headline6 {
+  font-family: "HeadFont";
+  font-size: 18px;
+}
+.body1 {
+  font-family: "BodyFont";
+  font-size: 16px;
+}
+.body2 {
+  font-family: "BodyFont";
+  font-size: 14px;
+}
+.subtitle1 {
+  font-family: "BodyFontMedium";
+  font-size: 18px;
+}
+.subtitle2 {
+  font-family: "BodyFontLight";
+  font-size: 16px;
+}
+.button {
+  font-family: "BodyFont";
+  font-size: 16px;
+}
+.overline {
+  font-family: "BodyFont";
+  font-size: 12px;
+}
+.caption {
+  font-family: "BodyFontLight";
+  font-size: 14px;
+}
+
+@media (max-width : 320px) {
+  .headline1,
+  .headline2,
+  .headline3,
+  .headline4 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,53 @@
+.soundBars {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 32px;
+}
+.soundBars span{
+  display: inline-block;  
+  background: var(--primary-color);
+  margin: auto 1px 0;
+  height: 90%;
+  width: 4px;
+  border-radius: 2px;
+  transform: scaleY(0.99);
+  transform-origin: bottom;
+  transition: all 0.4s ease-in-out;
+}
+.soundBars span:nth-child(1) {
+  transform: scaleY(0.8);
+}
+.soundBars span:nth-child(2) {
+  transform: scaleY(0.6);
+}
+.soundBars span:nth-child(4) {
+  transform: scaleY(0.4);
+}
+.soundBars > span {
+  animation: bars 2s infinite alternate;
+}
+.soundBars > span:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.soundBars > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.soundBars > span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.soundBars > span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes bars {
+  50% {
+    opacity: 0.2;
+    transform: scaleY(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

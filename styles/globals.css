@@ -1,0 +1,125 @@
+@import url(colors.css);
+@import url(fonts.css);
+@import url(scrollbar.css);
+@import url(spacing.css);
+@import url(loading.css);
+@import url(forms.css);
+@import url(material_forms.css);
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* adds padding without affecting width */
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  color: var(--black-text-color);
+  background-color: var(--bg-alt-color);
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+}
+
+.centerInContainer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.spaceBtnInContainer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+@media (max-width: 776px) {
+  .spaceBtnInContainer{
+    flex-wrap: wrap;
+  }
+}
+
+.containerParent{
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+.flexCol{
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-text-color);
+}
+
+.clickableElem:hover,
+.clickableElem:focus{
+  cursor: pointer;
+}
+
+.inlineElem{
+  display: inline-block;
+}
+
+.flexElem{
+  display: flex;
+  width: fit-content;
+}
+
+.blockElem{
+  display: block;
+}
+
+/** card **/
+.card {
+  border-radius: 6px;
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.clickableCard:hover,
+.clickableCard:focus {
+  cursor: pointer;
+  cursor: hand;
+  -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.textCenter{
+  text-align: center;
+}
+
+
+.shrinkOnHover{
+  display: flex;
+  transition: transform 250ms ease-in-out;
+}
+
+.shrinkOnHover:hover,
+.shrinkOnHover:focus{
+  cursor: pointer;
+  transform: scale(0.98);
+}

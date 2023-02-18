@@ -1,0 +1,25 @@
+///https://www.youtube.com/watch?v=Iu5aZDqZt8E&t=387s
+
+.nvmrc specificies
+ -- node version
+
+ .npmrc restricts engine (see package.json engines) 
+
+ prettier specifies some coding format standards
+
+ husky - for git hooks
+ what to run before commit, push
+  - lint (run before commit)
+  - build  (run before push)
+
+ "prepare" : "husky install" added to scripts in package.json
+ is to ensure that anyone who clones the repo also gets husky on install  
+
+@commitlint/config-conventional @commitlint/cli
+ -- to enforce conventional style for commit messages 
+ these are defined in commitlint.config.js
+
+///might run to webpack error - polyfills not preloaded
+run yarn add -D util
+
+

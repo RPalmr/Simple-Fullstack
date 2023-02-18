@@ -1,0 +1,52 @@
+.loaderContainer{
+	display: flex;
+}
+
+.progress,
+.progressSm,
+.progressLg {
+	display: flex;
+	border-radius: 50%;
+	-ms-zoom-animation: spin .8s linear infinite;
+	-o-animation: spin .8s linear infinite;
+	-moz-animation: spin .8s linear infinite;
+	-webkit-animation: spin .8s linear infinite;
+	animation: spin .8s linear infinite;
+  }
+
+  .progressSm{
+	border: 3px solid var(--primary-dark-color);
+	border-top: 2px solid var(--accent-color);
+	border-bottom: 2px solid var(--accent-color);
+	width: 24px !important;
+	height: 24px !important;
+  }
+  
+  .progressLg{
+	border: 3px solid var(--primary-dark-color);
+	border-top: 3px solid var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+	width: 32px !important;
+	height: 32px !important;
+  }
+
+
+  @-o-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @-moz-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }

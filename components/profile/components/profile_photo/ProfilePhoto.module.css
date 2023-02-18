@@ -1,0 +1,13 @@
+.profilePhoto{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profilePhotoAvatar{
+    display: flex;
+    font-size: 32px;
+}
